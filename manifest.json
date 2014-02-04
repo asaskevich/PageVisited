@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+
+    "name": "PageVisited",
+    "version": "1.0",
+
+    "icons": {
+        "16": "16px.png",
+        "32": "32px.png",
+        "48": "48px.png",
+        "64": "64px.png"
+    },
+    
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    },
+
+    "browser_action": {
+        "default_title": "PageVisited",
+        "default_icon": "48px.png",
+        "default_popup": "popup.html"
+    },
+
+    "options_page": "options.html"
+}
